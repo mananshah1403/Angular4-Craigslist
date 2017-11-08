@@ -1,3 +1,9 @@
-<p>
-  crib-listing works!
-</p>
+<div *ngFor = "let crib of cribs" class="col-sm-4">
+  <div class="thumbnail">
+      <img src="assets/images/{{crib.image}}.jpg" alt="">
+      <h3>{{crib.address}}</h3>  
+      <h3>{{crib.price}}</h3>
+      <p>{{crib.type}}</p>
+  </div>
+
+</div> 
